@@ -1,7 +1,12 @@
 #
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
-for line in sys.stdin:
+import sys
+if __name__ == "__main__":
+    curkey = None
+    mayor=0.0000
+    menor=1000.0
+    for line in sys.stdin:
         key, val = line.split("\t")
         val = float(val)
         if key == curkey:
